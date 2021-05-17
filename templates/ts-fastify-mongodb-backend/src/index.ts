@@ -1,13 +1,12 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 require('dotenv').config();
-import mercurius from 'mercurius';
+import { ApolloServer } from 'apollo-server-fastify';
 import { buildGraphbackAPI } from 'graphback';
 import { createMongoDbProvider } from '@graphback/runtime-mongo';
 import fastify from 'fastify';
 import fastifyCors from 'fastify-cors';
 import { loadConfigSync } from 'graphql-config';
-import { makeExecutableSchema } from '@graphql-tools/schema';
 import { connectDB } from './db';
 import { noteResolvers } from './resolvers/noteResolvers';
 
@@ -36,23 +35,17 @@ async function start() {
     dataProviderCreator: createMongoDbProvider(db)
   });
 
-  const schema = makeExecutableSchema({
-    typeDefs, resolvers: [
-      resolvers,
-      noteResolvers
-    ]
-  })
-
-  app.register((mercurius as any), {
-    schema,
-    graphiql: true,
-    context: contextCreator,
-    subscription: true
+  const apolloServer = new ApolloServer({
+    typeDefs,
+    resolvers: [resolvers, noteResolvers],
+    context: contextCreator
   });
+
+  app.register(apolloServer.createHandler());
+  apolloServer.installSubscriptionHandlers(app.server);
 
   app.listen(4000, () => {
     console.log(`🚀  Server ready at http://localhost:4000/graphql`);
-    console.log(`🚀  GraphQL IDE ready at http://localhost:4000/graphiql`);
   });
 }
 
