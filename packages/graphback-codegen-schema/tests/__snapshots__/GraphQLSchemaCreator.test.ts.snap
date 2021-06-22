@@ -13,7 +13,7 @@ type Note {
 }
 
 type NoteResultList {
-  items: [Note]!
+  items: [Note!]!
   offset: Int
   limit: Int
   count: Int
@@ -243,7 +243,7 @@ input StringInput {
 }
 
 type NoteResultList {
-  items: [Note]!
+  items: [Note!]!
   offset: Int
   limit: Int
   count: Int
@@ -274,7 +274,7 @@ enum SortDirectionEnum {
 }
 
 type TestResultList {
-  items: [Test]!
+  items: [Test!]!
   offset: Int
   limit: Int
   count: Int
@@ -325,7 +325,7 @@ input CommentFilter {
 }
 
 type CommentResultList {
-  items: [Comment]!
+  items: [Comment!]!
   offset: Int
   limit: Int
   count: Int
@@ -528,7 +528,7 @@ input ModelWithArrayScalarFilter {
 }
 
 type ModelWithArrayScalarResultList {
-  items: [ModelWithArrayScalar]!
+  items: [ModelWithArrayScalar!]!
   offset: Int
   limit: Int
   count: Int
@@ -560,7 +560,7 @@ input ModelWithTransientFieldFilter {
 }
 
 type ModelWithTransientFieldResultList {
-  items: [ModelWithTransientField]!
+  items: [ModelWithTransientField!]!
   offset: Int
   limit: Int
   count: Int
@@ -657,7 +657,7 @@ input NoteFilter {
 }
 
 type NoteResultList {
-  items: [Note]!
+  items: [Note!]!
   offset: Int
   limit: Int
   count: Int
@@ -749,7 +749,7 @@ input TestFilter {
 }
 
 type TestResultList {
-  items: [Test]!
+  items: [Test!]!
   offset: Int
   limit: Int
   count: Int
@@ -799,7 +799,7 @@ input VersionedFilter {
 }
 
 type VersionedResultList {
-  items: [Versioned]!
+  items: [Versioned!]!
   offset: Int
   limit: Int
   count: Int
@@ -911,7 +911,7 @@ type Test {
 scalar GraphbackJSON
 
 type NoteResultList {
-  items: [Note]!
+  items: [Note!]!
   offset: Int
   limit: Int
   count: Int
@@ -943,7 +943,7 @@ enum SortDirectionEnum {
 }
 
 type TestResultList {
-  items: [Test]!
+  items: [Test!]!
   offset: Int
   limit: Int
   count: Int
@@ -958,14 +958,14 @@ input TestFilter {
 }
 
 type CommentResultList {
-  items: [Comment]!
+  items: [Comment!]!
   offset: Int
   limit: Int
   count: Int
 }
 
 type VersionedResultList {
-  items: [Versioned]!
+  items: [Versioned!]!
   offset: Int
   limit: Int
   count: Int
@@ -1032,7 +1032,7 @@ type ModelWithTransientField {
 }
 
 type ModelWithTransientFieldResultList {
-  items: [ModelWithTransientField]!
+  items: [ModelWithTransientField!]!
   offset: Int
   limit: Int
   count: Int
@@ -1053,7 +1053,7 @@ type ModelWithArrayScalar {
 }
 
 type ModelWithArrayScalarResultList {
-  items: [ModelWithArrayScalar]!
+  items: [ModelWithArrayScalar!]!
   offset: Int
   limit: Int
   count: Int
@@ -1430,7 +1430,7 @@ type Test {
 scalar GraphbackJSON
 
 type NoteResultList {
-  items: [Note]!
+  items: [Note!]!
   offset: Int
   limit: Int
   count: Int
@@ -1462,7 +1462,7 @@ enum SortDirectionEnum {
 }
 
 type TestResultList {
-  items: [Test]!
+  items: [Test!]!
   offset: Int
   limit: Int
   count: Int
@@ -1477,14 +1477,14 @@ input TestFilter {
 }
 
 type CommentResultList {
-  items: [Comment]!
+  items: [Comment!]!
   offset: Int
   limit: Int
   count: Int
 }
 
 type VersionedResultList {
-  items: [Versioned]!
+  items: [Versioned!]!
   offset: Int
   limit: Int
   count: Int
@@ -1551,7 +1551,7 @@ type ModelWithTransientField {
 }
 
 type ModelWithTransientFieldResultList {
-  items: [ModelWithTransientField]!
+  items: [ModelWithTransientField!]!
   offset: Int
   limit: Int
   count: Int
@@ -1572,7 +1572,7 @@ type ModelWithArrayScalar {
 }
 
 type ModelWithArrayScalarResultList {
-  items: [ModelWithArrayScalar]!
+  items: [ModelWithArrayScalar!]!
   offset: Int
   limit: Int
   count: Int
@@ -1874,7 +1874,7 @@ input CommentFilter {
 }
 
 type CommentResultList {
-  items: [Comment]!
+  items: [Comment!]!
   offset: Int
   limit: Int
   count: Int
@@ -1964,7 +1964,7 @@ input NoteFilter {
 }
 
 type NoteResultList {
-  items: [Note]!
+  items: [Note!]!
   offset: Int
   limit: Int
   count: Int

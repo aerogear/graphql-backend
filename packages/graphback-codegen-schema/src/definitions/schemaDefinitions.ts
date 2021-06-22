@@ -351,7 +351,7 @@ export const createModelListResultType = (modelType: GraphQLObjectType) => {
     name: `${modelType.name}ResultList`,
     fields: {
       items: {
-        type: GraphQLNonNull(GraphQLList(modelType))
+        type: GraphQLNonNull(GraphQLList(GraphQLNonNull(modelType)))
       },
       offset: { type: GraphQLInt },
       limit: { type: GraphQLInt },

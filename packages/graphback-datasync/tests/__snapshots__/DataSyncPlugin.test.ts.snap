@@ -45,7 +45,7 @@ input CommentFilter {
 }
 
 type CommentResultList {
-  items: [Comment]!
+  items: [Comment!]!
   offset: Int
   limit: Int
   count: Int
@@ -158,7 +158,7 @@ input NoteFilter {
 }
 
 type NoteResultList {
-  items: [Note]!
+  items: [Note!]!
   offset: Int
   limit: Int
   count: Int
@@ -267,7 +267,7 @@ input CommentFilter {
 }
 
 type CommentResultList {
-  items: [Comment]!
+  items: [Comment!]!
   offset: Int
   limit: Int
   count: Int
@@ -399,7 +399,7 @@ input CommentFilter {
 }
 
 type CommentResultList {
-  items: [Comment]!
+  items: [Comment!]!
   offset: Int
   limit: Int
   count: Int

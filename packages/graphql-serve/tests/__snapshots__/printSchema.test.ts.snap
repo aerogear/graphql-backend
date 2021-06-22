@@ -86,7 +86,7 @@ input UserFilter {
 }
 
 type UserResultList {
-  items: [User]!
+  items: [User!]!
   offset: Int
   limit: Int
   count: Int
