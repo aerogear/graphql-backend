@@ -34,7 +34,7 @@
     "lodash-es": "4.17.15",
     "node-emoji": "1.10.0",
     "pino": "6.8.0",
-    "ts-jest": "26.4.4"
+    "ts-jest": "27.0.3"
   },
   "devDependencies": {
     "@types/jest": "26.0.19",
@@ -42,7 +42,7 @@
     "@types/node": "12.19.9",
     "graphql": "15.4.0",
     "graphql-tools": "7.0.2",
-    "jest": "26.6.3",
+    "jest": "27.0.6",
     "pg": "8.5.1",
     "rimraf": "3.0.2",
     "sqlite3": "5.0.0",
