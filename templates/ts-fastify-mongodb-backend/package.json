@@ -15,15 +15,15 @@
   "dependencies": {
     "@graphback/runtime-mongo": "1.1.2",
     "@graphql-tools/schema": "7.1.2",
-    "dotenv": "8.2.0",
+    "dotenv": "10.0.0",
     "fastify": "3.9.2",
-    "fastify-cors": "4.1.0",
+    "fastify-cors": "6.0.1",
     "graphback": "1.1.2",
     "graphql": "15.4.0",
     "graphql-config": "3.2.0",
     "graphql-subscriptions": "1.1.0",
     "graphql-tag": "2.11.0",
-    "mercurius": "6.5.0",
+    "mercurius": "7.9.1",
     "mongodb": "3.6.3"
   },
   "devDependencies": {
@@ -36,7 +36,7 @@
     "@types/node-fetch": "2.5.7",
     "graphback-cli": "1.1.2",
     "graphql-cli": "4.1.0",
-    "ts-node": "9.1.1",
+    "ts-node": "10.0.0",
     "tslint": "6.1.3",
     "typescript": "4.1.3"
   }

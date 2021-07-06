@@ -29,13 +29,13 @@
   },
   "devDependencies": {
     "@types/jest": "26.0.19",
-    "@types/node": "12.19.9",
+    "@types/node": "14.17.4",
     "@types/pino": "6.3.4",
     "graphql": "15.4.0",
     "jest": "26.6.3",
     "rimraf": "3.0.2",
     "ts-jest": "26.4.4",
-    "ts-node": "9.1.1",
+    "ts-node": "10.0.0",
     "tslint": "6.1.3",
     "typescript": "4.1.3"
   },
@@ -50,7 +50,7 @@
     "bson": "4.2.2",
     "dataloader": "2.0.0",
     "glob": "7.1.6",
-    "graphql-compose": "7.23.0",
+    "graphql-compose": "9.0.1",
     "graphql-fields-list": "2.2.1",
     "graphql-metadata": "0.7.6",
     "graphql-scalars": "1.6.1",
@@ -59,7 +59,7 @@
     "pluralize": "8.0.0"
   },
   "peerDependencies": {
-    "bson-ext": "2.x.x",
+    "bson-ext": "2.x.x || 4.x",
     "graphql": "^14.0.0 || ^15.0.0"
   }
 }
